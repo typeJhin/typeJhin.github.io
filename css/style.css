@@ -42,6 +42,3 @@ body {
 .nav-bar a:hover{
     color: #0ef;
 }
-.nav-bar a.active {
-    color: #0ef;
-}
