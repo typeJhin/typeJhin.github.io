@@ -5,55 +5,17 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif, sans-serif;
-    background: url('https://source.unsplash.com/random/1600x900') no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+    background : #1f242d;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 1100px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 15px 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.logo {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.nav-links a:hover {
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
