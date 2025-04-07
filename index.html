@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>MI PORTFOLIO</title>
 </head>
 <body>
@@ -13,11 +14,11 @@
 
         <a class="logo" href="#">Portfolio.</a>
         <nav class="nav-bar">
-            <a href="index.html" class="active">Inicio</a>
-            <a href="acerca-de.html">Acerca de</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="skills.html">Skills</a>
-            <a href="contacto.html">Contacto</a>
+            <a href="index.html"  style="--i:1" class="active">Inicio</a>
+            <a href="acerca-de.html" style="--i:2">Acerca de</a>
+            <a href="portfolio.html" style="--i:3">Portfolio</a>
+            <a href="skills.html" style="--i:4">Skills</a>
+            <a href="contacto.html" style="--i:5">Contacto</a>
             
 
 
@@ -26,9 +27,30 @@
     </header>
 
     <main>
-        <section>
+        <section class="home">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1>Felipe Martinez</h1>
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, pariatur voluptates blanditiis aut dolor amet mollitia? Optio, harum minima eligendi iure ex, quidem minus laudantium commodi, natus animi aliquid ad.</p>
+
+                <div class="social-media">
+                    
+                    <a href="#" style="--i:7"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#" style="--i:8"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" style="--i:9"><i class='bx bxl-youtube' ></i></a>
+                    <a href="#" style="--i:10"><i class='bx bxl-linkedin' ></i></box-icon></a>
+                    
+                </div>
+                <a href="#" class="btn">Download CV</a>
+                <div class="home-image">
+                    <img src="" alt="">
+                </div>
+            </div>
 
         </section>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="script/script.js"></script>
     </main>
     
 </body>
