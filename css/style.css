@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -127,6 +128,7 @@ body {
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
+    transition: box-shadow 0.2s ease;
 
 }
 
@@ -150,6 +152,11 @@ body {
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
+    transition: box-shadow 0.3s ease;
+}
+
+.btn:hover{
+    box-shadow: none;
 }
 
 @keyframes slideRight{
