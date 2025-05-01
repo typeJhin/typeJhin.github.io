@@ -6,8 +6,14 @@
 }
 
 body {
-    background : #1f242d;
+    background: #1F242D;
+    background: linear-gradient(180deg, rgba(31, 36, 45, 1) 0%, rgba(0, 45, 77, 1) 25%, rgba(0, 54, 92, 1) 50%, rgba(0, 76, 130, 1) 75%, rgba(0, 113, 194, 1) 100%);
     color: #fff;
+}
+
+:root{
+    --big-font: 2.5rem;
+    --norma-font: 2rem
 }
 
 .header {
@@ -61,7 +67,9 @@ body {
 .home-image img{
     max-width: 450px;
     margin-right: -20px;
-
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage ease-in-out infinite;
+    animation-delay: 2s, 3s;
 
 }
 
@@ -188,8 +196,88 @@ body {
     }
 }
 
+@keyframes zoomIn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-24px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
 /* ABOUT US PAGE*/
 
 .container{
     width: 100%;
+}
+
+.word {
+    color: #0ef
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2em;
+
+}
+
+.about .img-about {
+    text-align: center;
+    position: relative;   
+}
+
+.about .img-about img{
+    max-width: 400px;
+    height: auto;
+
+}
+
+.about-content span{
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.about-content h2{
+    color: #0ef;
+    font-weight: 700;
+    font-size: var(--norma-font);
+}
+
+.about-content h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: .2rem;
+}
+
+.about-content p{
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.about-content{
+    margin-left: 30px;
 }
