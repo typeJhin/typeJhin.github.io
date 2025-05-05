@@ -3,11 +3,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    background : #1f242d;
+    background: #1F242D;
+    background: linear-gradient(180deg, rgba(31, 36, 45, 1) 0%, rgba(0, 45, 77, 1) 25%, rgba(0, 54, 92, 1) 50%, rgba(0, 76, 130, 1) 75%, rgba(0, 113, 194, 1) 100%);
     color: #fff;
+}
+
+:root{
+    --big-font: 2.5rem;
+    --norma-font: 2rem
 }
 
 .header {
@@ -61,7 +68,9 @@ body {
 .home-image img{
     max-width: 450px;
     margin-right: -20px;
-
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage ease-in-out infinite;
+    animation-delay: 2s, 3s;
 
 }
 
@@ -119,6 +128,7 @@ body {
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
+    transition: box-shadow 0.2s ease;
 
 }
 
@@ -142,6 +152,190 @@ body {
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
+    transition: box-shadow 0.3s ease;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+
+/* ------------------------------------------ ABOUT US PAGE ------------------------------------------------ */
+
+.container{
+    width: 100%;
+}
+
+.word {
+    color: #0ef
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2em;
+
+}
+
+.about .img-about {
+    text-align: center;
+    position: relative;   
+}
+
+.about .img-about img{
+    max-width: 400px;
+    height: auto;
+
+}
+
+.about-content span{
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.about-content h2{
+    color: #0ef;
+    font-weight: 700;
+    font-size: var(--norma-font);
+}
+
+.about-content h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: .2rem;
+}
+
+.about-content p{
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.about-content{
+    margin-left: 30px;
+}
+
+
+/* ------------------------------------- EDUCATION SECTION ------------------------------------------------ */
+
+
+.heading{
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.education{
+    padding: 100px 15px;
+
+}
+
+.education h2{
+    margin-bottom: 5rem;
+}
+
+.timeline-items{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.timeline-items::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #0ef;
+    left: calc(50% - 1px);
+}
+
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(add) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot{
+    height: 21px;
+    width: 21px;
+    background-color: #0ef;
+    box-shadow: 0 0 25px #0ef, 0 0 50px #0ef;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-date{
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    margin: 6px 0 15px;
+}
+
+.timeline-content{
+    background-color: #1F242D;
+    border: 3px solid #0ef;
+    padding: 30px 50px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px #0ef;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.timeline-content:hover{
+
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #0ef;
+
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+
+.timeline-content p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #0ef;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #1F242D;
+    width: 50px;
 }
 
 @keyframes slideRight{
@@ -188,8 +382,29 @@ body {
     }
 }
 
-/* ABOUT US PAGE*/
-
-.container{
-    width: 100%;
+@keyframes zoomIn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-24px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
