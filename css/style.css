@@ -81,10 +81,10 @@ body {
     padding: 70px 10% 0;
 }
 .home-image img{
-    max-width: 450px;
+    max-width: 480px;
     margin-right: -20px;
     opacity: 0;
-    animation: zoomIn 1s ease forwards, floatImage ease-in-out infinite;
+    animation: zoomIn 0.8s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2s, 3s;
 
 }
@@ -199,7 +199,7 @@ body {
 }
 
 .about .img-about img{
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
 
 }
@@ -570,7 +570,7 @@ body {
 
 @keyframes zoomIn{
     0%{
-        transform: scale(0);
+        transform: scale(0.7);
         opacity: 0;
     }
     100%{
