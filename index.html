@@ -13,12 +13,14 @@
         
 
         <a class="logo" href="index.html">Portfolio.</a>
+
+        <i class='bx  bx-menu' id="menu-icon"></i> 
         <nav class="nav-bar">
             <a href="#home"  style="--i:1" class="active">Inicio</a>
             <a href="#about" style="--i:2">Acerca de</a>
             <a href="#skills" style="--i:3">Skills</a>
             <a href="#portfolio" style="--i:4">Portfolio</a>
-            <a href="contacto.html" style="--i:5">Contacto</a>
+            <a href="#contact" style="--i:5">Contacto</a>
             
 
 
@@ -29,20 +31,20 @@
     <main>
         <section id="home" class="home">
             <div class="home-content">
-                <h3>Hello, I'm</h3>
+                <h3>Hello, It's Me</h3>
                 <h1>Felipe Martinez</h1>
                 <h3>And I'm a <span class="multiple-text"></span></h3>
                 <p>Soy Editor Multimedia con experiencia en edición de video, diseño gráfico y animación para artistas y proyectos personales. Actualmente me estoy formando como desarrollador con enfoque en backend, integrando lo visual con lo técnico para crear proyectos más completos y funcionales</p>
 
                 <div class="social-media">
                     
-                    <a href="#" style="--i:7"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.facebook.com/Felii1881/" target="_blank" style="--i:7"><i class='bx bxl-facebook' ></i></a>
                     <a href="https://www.instagram.com/jhinbaby/" target="_blank" style="--i:8"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" style="--i:9"><i class='bx bxl-youtube' ></i></a>
-                    <a href="#" style="--i:10"><i class='bx bxl-linkedin' ></i></box-icon></a>
+                    <a href="https://www.youtube.com/@JhinBaby" target="_blank" style="--i:9"><i class='bx bxl-youtube' ></i></a>
+                    <a href="https://www.linkedin.com/in/felipe-martinez-435795262/" target="_blank" style="--i:10"><i class='bx bxl-linkedin' ></i></box-icon></a>
                     
                 </div>
-                <a href="#" class="btn">Download CV</a>
+                <a  href="assets/CV_FELIPE_MARTINEZ_20255.pdf" class="btn" download="CV_FELIPE_MARTINEZ_20255.pdf">Download CV</a>
             </div>
             <div class="home-image">
                 <img src="img/IMG_11432.png" alt="">
@@ -52,14 +54,14 @@
 
         <section id="about" class="about">
             <div class="img-about">
-                <img src="img/SI.png" alt="#">
+                <img src="img/EQ.png" alt="#">
 
             </div>
 
             <div class="about-content">
 
-                <span>Let me introduce myself</span>
-                <h2>About Me</h2>
+                <span class="text-up">Let me introduce myself</span>
+                <h2>About <span>Me</span></h2>
                 <h3>A story of good</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius officia soluta omnis, blanditiis vel voluptatum accusamus debitis. Harum ducimus vitae beatae! Ipsa aliquam aspernatur maxime minima et fuga nisi sed.</p>
 
@@ -115,7 +117,7 @@
 
         <section id="skills" class="skills">
             <div class="main-text">
-                <span>technical and professional</span>
+                <span class="text-up">technical and professional</span>
                 <h2>My Skills</h2>
             </div>
 
@@ -255,8 +257,69 @@
 
             </div>
         </section>
-        
-        
+
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Ultimos <span class="spn">Proyectos</span></h2>
+            
+            <div class="porfolio-container">
+                <div class="portfolio-box">
+                    <img src="img/Secuencia 01.00_00_00_00.Imagen fija002.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>VideoClip Musical</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dolorem!</p>
+                        <a href="#"><i class='bx  bx-link-alt'></i> </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="img/Secuencia 01.00_00_00_00.Imagen fija002.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>VideoClip Musical</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dolorem!</p>
+                        <a href="#"><i class='bx  bx-link-alt'></i> </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-box">
+                    <img src="img/Secuencia 01.00_00_00_00.Imagen fija002.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>VideoClip Musical</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dolorem!</p>
+                        <a href="#"><i class='bx  bx-link-alt'></i> </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-box">
+                    <img src="img/Secuencia 01.00_00_00_00.Imagen fija002.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>VideoClip Musical</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dolorem!</p>
+                        <a href="#"><i class='bx  bx-link-alt'></i> </a>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading">Contacto <span>Me</span></h2>
+            
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Nombre Completo">
+                    <input type="email" placeholder="Correo Electronico">
+                </div>
+                    <div class="input-box">
+                    <input type="number" placeholder="Numero de Teléfono">
+                    <input type="text" placeholder="Asunto">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje"></textarea>
+                <input type="submit" value="Enviar Mensaje" class="btn">
+            </form>
+        </section>
         
     </main>
     
