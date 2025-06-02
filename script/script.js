@@ -29,7 +29,15 @@ circles.forEach(elem=>{
         pointsmarked[i].classList.add('marked')
     }
 })
+// TOGGLE ICON //
 
+let menuIcon = document.querySelector('#menu-icon');
+let navBar = document.querySelector('.nav-bar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navBar.classList.toggle('active');
+}
 
 // SCROLL SECTIONS//
 
