@@ -15,16 +15,16 @@
 
         <i class='bx  bx-menu' id="menu-icon"></i> 
         <nav class="nav-bar">
-            <a href="#home"  style="--i:1" class="active">Inicio</a>
-            <a href="#about" style="--i:2">Acerca de</a>
-            <a href="#skills" style="--i:3">Skills</a>
-            <a href="#portfolio" style="--i:4">Portfolio</a>
-            <a href="#contact" style="--i:5">Contacto</a>
+            <a href="#home"  style="--i:1" class="active" data-section="nav" data-value="home">Inicio</a>
+            <a href="#about" style="--i:2" data-section="nav" data-value="about">Acerca de</a>
+            <a href="#skills" style="--i:3"data-section="nav" data-value="skills">Skills</a>
+            <a href="#portfolio" style="--i:4" data-section="nav" data-value="portfolio">Portfolio</a>
+            <a href="#contact" style="--i:5"data-section="nav" data-value="contact">Contacto</a>
         </nav>
         
         <div class="languages">
-            <button class="lang-button">🇦🇷</button>
-            <button class="lang-button">🇺🇸</button>
+            <button class="lang-button" data-language="es">🇦🇷</button>
+            <button class="lang-button" data-language="en">🇺🇸</button>
         </div>
 
     </header>
@@ -32,10 +32,10 @@
     <main>
         <section id="home" class="home">
             <div class="home-content">
-                <h3>Hello, It's Me</h3>
-                <h1>Felipe Martinez</h1>
-                <h3>And I'm a <span class="multiple-text"></span></h3>
-                <p>Soy Editor Multimedia con experiencia en edición de video, diseño gráfico y animación para artistas y proyectos personales. Actualmente me estoy formando como desarrollador con enfoque en backend, integrando lo visual con lo técnico para crear proyectos más completos y funcionales</p>
+                <h3 data-section="home" data-value="greeting">Hola, soy</h3>
+                <h1 data-section="home" data-value="name">Felipe Martinez</h1>
+                <h3 data-section="home" data-value="descriptionTitle">Y soy <span class="multiple-text"></span></h3>
+                <p data-section="home" data-value="description">Editor Multimedia con experiencia en edición de video, diseño gráfico y animación para artistas y proyectos personales. Actualmente me estoy formando como desarrollador con enfoque en backend, integrando lo visual con lo técnico para crear proyectos más completos y funcionales</p>
 
                 <div class="social-media">
                     
@@ -45,7 +45,7 @@
                     <a href="https://www.linkedin.com/in/felipe-martinez-435795262/" target="_blank" style="--i:10"><i class='bx bxl-linkedin' ></i></box-icon></a>
                     
                 </div>
-                <a  href="assets/CV_FELIPE_MARTINEZ_20255.pdf" class="btn" download="CV_FELIPE_MARTINEZ_20255.pdf">Download CV</a>
+                <a  href="assets/CV_FELIPE_MARTINEZ_20255.pdf" class="btn" download="CV_FELIPE_MARTINEZ_20255.pdf" data-section="home" data-value="downloadCV">Descargar CV</a>
             </div>
             <div class="home-image">
                 <img src="img/IMG_11432.png" alt="">
@@ -61,20 +61,20 @@
 
             <div class="about-content">
 
-                <span class="text-up">Let me introduce myself</span>
-                <h2>About <span>Me</span></h2>
-                <h3>Un poco de mi historia</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius officia soluta omnis, blanditiis vel voluptatum accusamus debitis. Harum ducimus vitae beatae! Ipsa aliquam aspernatur maxime minima et fuga nisi sed.</p>
+                <span class="text-up" data-section="about" data-value="subtitle">Dejame Presentarme</span>
+                <h2 data-section="about" data-value="title">Sobre <span>Mí</span></h2>
+                <h3 data-section="about" data-value="history">Un poco de mi historia</h3>
+                <p data-section="about" data-value="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius officia soluta omnis, blanditiis vel voluptatum accusamus debitis. Harum ducimus vitae beatae! Ipsa aliquam aspernatur maxime minima et fuga nisi sed.</p>
 
                 <div class="btn-box">
-                    <a href="#" class="btn">Read More!</a>
+                    <a href="#" class="btn" data-section="about" data-value="readMore">Leer mas!</a>
                 </div>
             </div>
         </section>
         
         <section class="education" id="education">
-            <h2 class="heading">
-                Education
+            <h2 class="heading" data-section="education" data-value="title">
+                Educación
             </h2>
             
             <div class="timeline-items">
@@ -89,9 +89,9 @@
                     </div>
 
                     <div class="timeline-content">
-                        <h3>InTeCH 132</h3>
-                        <h4>Tercer Año (En progreso)</h4>
-                        <p>Tecnicatura en Analisis de Sistemas </p>
+                        <h3 data-section="items" data-value="institution">InTeCH 132</h3>
+                        <h4 data-section="items" data-value="details">Tercer Año (En progreso)</h4>
+                        <p data-section="items" data-value="career">Tecnicatura en Analisis de Sistemas </p>
 
                     </div>
                 </div>
@@ -106,8 +106,8 @@
                     </div>
 
                     <div class="timeline-content">
-                        <h3>Escuela Secundaria N°3 "Domingo F. Sarmiento"</h3>
-                        <p>Bachillerato en Ciencias Sociales</p>
+                        <h3 data-section="education" data-value="institution">Escuela Secundaria N°3 "Domingo F. Sarmiento"</h3>
+                        <p data-section="education" data-value="career">Bachillerato en Ciencias Sociales</p>
 
                     </div>
                 </div>
@@ -118,14 +118,14 @@
 
         <section id="skills" class="skills">
             <div class="main-text">
-                <span class="text-up">technical and professional</span>
-                <h2>My Skills</h2>
+                <span class="text-up">Técnicas y Profesionales</span>
+                <h2 data-section="skills" data-value="title">Mis Habilidades</h2>
             </div>
 
             <div class="skill-main">
 
-                <div class="skill-left">
-                    <h3>Habilidades Tecnicas</h3>
+                <div class="skill-left" >
+                    <h3 data-section="skills" data-value="technical">Habilidades Tecnicas</h3>
                     <div class="skill-bar">
                         <div class="info">
                             <p>HTML</p>
@@ -207,7 +207,7 @@
                 </div>
 
                 <div class="skill-right">
-                    <h3>Habilidades Blandas</h3>
+                    <h3 data-section="skills" data-value="soft">Habilidades Blandas</h3>
                     <div class="professional">
                         <div class="box">
                             <div class="circle" data-dots = "80" data-percent = "90"></div>
@@ -266,8 +266,8 @@
                 <div class="portfolio-box">
                     <img src="img/Secuencia 01.00_00_00_00.Imagen fija002.jpg" alt="">
                     <div class="portfolio-layer">
-                        <h4>VideoClip Musical</h4>
-                        <p>Video Clip hecho con Adobe After Effects y Adobe Premiere Pro para el artista Keibis en 2024</p>
+                        <h4 data-section="portfolio" data-value="title">VideoClip Musical</h4>
+                        <p data-section="portfolio" data-value="description">Video Clip hecho con Adobe After Effects y Adobe Premiere Pro para el artista Keibis en 2024</p>
                         <a href="https://www.youtube.com/watch?v=FJtb6NtU0yA"><i class='bx  bx-link-alt'></i> </a>
                     </div>
                 </div>
@@ -275,8 +275,8 @@
                 <div class="portfolio-box">
                     <img src="img/Dandy.png" alt="">
                     <div class="portfolio-layer">
-                        <h4>VideoClip Musical</h4>
-                        <p>Video Clip hecho con Adobe After Effects y Adobe Premiere Pro para el artista Dripp Lyon en 2024</p>
+                        <h4 data-section="portfolio" data-value="title">VideoClip Musical</h4>
+                        <p data-section="portfolio" data-value="description">Video Clip hecho con Adobe After Effects y Adobe Premiere Pro para el artista Dripp Lyon en 2024</p>
                         <a href="https://www.youtube.com/watch?v=Zw5gDV4CrH8"><i class='bx  bx-link-alt'></i> </a>
                     </div>
                 </div>
@@ -284,8 +284,8 @@
                 <div class="portfolio-box">
                     <img src="img/grupo_sanguineo_2.jpg" alt="">
                     <div class="portfolio-layer">
-                        <h4>VideoClip Musical</h4>
-                        <p>Video Lyrics hecho con Adobe After Effects y Adobe Premiere Pro para los artistas Dripp Lyon & Keibis en 2024</p>
+                        <h4 data-section="portfolio" data-value="title">VideoClip Musical</h4>
+                        <p data-section="portfolio" data-value="description">Video Lyrics hecho con Adobe After Effects y Adobe Premiere Pro para los artistas Dripp Lyon & Keibis en 2024</p>
                         <a href="https://www.youtube.com/watch?v=gOh3eb71Djk"><i class='bx  bx-link-alt'></i> </a>
                     </div>
                 </div>
@@ -293,8 +293,8 @@
                 <div class="portfolio-box">
                     <img src="img/locuras_contigo.jpg" alt="">
                     <div class="portfolio-layer">
-                        <h4>VideoClip Musical</h4>
-                        <p>Video Clip hecho con Adobe After Effects y Adobe Premiere Pro para el artista Jhin Baby en 2024</p>
+                        <h4 data-section="portfolio" data-value="title">VideoClip Musical</h4>
+                        <p data-section="portfolio" data-value="description">Video Clip hecho con Adobe After Effects y Adobe Premiere Pro para el artista Jhin Baby en 2024</p>
                         <a href="https://www.youtube.com/watch?v=Oo10SbTEZtQ"><i class='bx  bx-link-alt'></i> </a>
                     </div>
                 </div>
@@ -306,19 +306,19 @@
         </section>
 
         <section class="contact" id="contact">
-            <h2 class="heading">Contacta<span>Me</span></h2>
+            <h2 class="heading" data-section="portfolio" data-value="title">Contacta<span>Me</span></h2>
             
             <form action="#">
                 <div class="input-box">
-                    <input type="text" placeholder="Nombre Completo">
-                    <input type="email" placeholder="Correo Electronico">
+                    <input type="text" placeholder="Nombre Completo" data-section="form" data-value="name">
+                    <input type="email" placeholder="Correo Electronico" data-section="form" data-value="email">
                 </div>
                     <div class="input-box">
-                    <input type="number" placeholder="Numero de Teléfono">
-                    <input type="text" placeholder="Asunto">
+                    <input type="number" placeholder="Numero de Teléfono" data-section="form" data-value="phone">
+                    <input type="text" placeholder="Asunto" data-section="form" data-value="subject">
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje"></textarea>
-                <input type="submit" value="Enviar Mensaje" class="btn">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje" data-section="form" data-value="message"></textarea>
+                <input type="submit" value="Enviar Mensaje" class="btn" data-section="form" data-value="send">
             </form>
         </section>
 

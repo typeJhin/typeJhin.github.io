@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hello, It's Me",
+    "name": "Felipe Martinez",
+    "descriptionTitle": "And I'm a",
+    "description": "I'm a Multimedia Editor with experience in video editing, graphic design, and animation for artists and personal projects. I'm currently training as a backend-focused developer, integrating visuals with technical aspects to create more complete and functional projects.",
+    "downloadCV": "Download CV"
+  },
+  "about": {
+    "subtitle": "Let me introduce myself",
+    "title": "About Me",
+    "history": "A bit of my story",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius officia soluta omnis, blanditiis vel voluptatum accusamus debitis. Harum ducimus vitae beatae! Ipsa aliquam aspernatur maxime minima et fuga nisi sed.",
+    "readMore": "Read More"
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "date": "2025",
+        "institution": "InTeCH 132",
+        "details": "Third Year (In progress)",
+        "career": "Technical Degree in Systems Analysis"
+      },
+      {
+        "date": "2019",
+        "institution": "Secondary School N°3 \"Domingo F. Sarmiento\"",
+        "career": "Bachelor in Social Sciences"
+      }
+    ]
+  },
+  "skills": {
+    "title": "My Skills",
+    "technical": "Technical Skills",
+    "soft": "Soft Skills",
+    "softSkills": {
+      "teamwork": "Teamwork",
+      "projectManagement": "Project Management",
+      "creativity": "Creativity",
+      "communication": "Communication"
+    }
+  },
+  "portfolio": {
+    "title": "Latest Projects",
+    "projects": [
+      {
+        "title": "Music Video Clip",
+        "description": "Music video made with Adobe After Effects and Adobe Premiere Pro for artist Keibis in 2024"
+      },
+      {
+        "title": "Music Video Clip",
+        "description": "Music video made with Adobe After Effects and Adobe Premiere Pro for artist Dripp Lyon in 2024"
+      },
+      {
+        "title": "Music Video Clip",
+        "description": "Lyric video made with Adobe After Effects and Adobe Premiere Pro for artists Dripp Lyon & Keibis in 2024"
+      },
+      {
+        "title": "Music Video Clip",
+        "description": "Music video made with Adobe After Effects and Adobe Premiere Pro for artist Jhin Baby in 2024"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Me",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 by Felipe Martinez | All Rights Reserved."
+  }
+}

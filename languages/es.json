@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contacto"
+  },
+  "home": {
+    "greeting": "Hola, soy",
+    "name": "Felipe Martinez",
+    "descriptionTitle": "Y soy",
+    "description": "Soy Editor Multimedia con experiencia en edición de video, diseño gráfico y animación para artistas y proyectos personales. Actualmente me estoy formando como desarrollador con enfoque en backend, integrando lo visual con lo técnico para crear proyectos más completos y funcionales.",
+    "downloadCV": "Descargar CV"
+  },
+  "about": {
+    "subtitle": "Déjame presentarme",
+    "title": "Sobre mí",
+    "history": "Un poco de mi historia",
+    "paragraph": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius officia soluta omnis, blanditiis vel voluptatum accusamus debitis. Harum ducimus vitae beatae! Ipsa aliquam aspernatur maxime minima et fuga nisi sed.",
+    "readMore": "Leer más"
+  },
+  "education": {
+    "title": "Educación",
+    "items": [
+      {
+        "date": "2025",
+        "institution": "InTeCH 132",
+        "details": "Tercer Año (En progreso)",
+        "career": "Tecnicatura en Análisis de Sistemas"
+      },
+      {
+        "date": "2019",
+        "institution": "Escuela Secundaria N°3 \"Domingo F. Sarmiento\"",
+        "career": "Bachillerato en Ciencias Sociales"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Mis Habilidades",
+    "technical": "Habilidades Técnicas",
+    "soft": "Habilidades Blandas",
+    "softSkills": {
+      "teamwork": "Trabajo en equipo",
+      "projectManagement": "Dirección de Proyectos",
+      "creativity": "Creatividad",
+      "communication": "Comunicación"
+    }
+  },
+  "portfolio": {
+    "title": "Últimos Proyectos",
+    "projects": [
+      {
+        "title": "VideoClip Musical",
+        "description": "Video Clip hecho con Adobe After Effects y Adobe Premiere Pro para el artista Keibis en 2024"
+      },
+      {
+        "title": "VideoClip Musical",
+        "description": "Video Clip hecho con Adobe After Effects y Adobe Premiere Pro para el artista Dripp Lyon en 2024"
+      },
+      {
+        "title": "VideoClip Musical",
+        "description": "Video Lyrics hecho con Adobe After Effects y Adobe Premiere Pro para los artistas Dripp Lyon & Keibis en 2024"
+      },
+      {
+        "title": "VideoClip Musical",
+        "description": "Video Clip hecho con Adobe After Effects y Adobe Premiere Pro para el artista Jhin Baby en 2024"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contactame",
+    "form": {
+      "name": "Nombre Completo",
+      "email": "Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "subject": "Asunto",
+      "message": "Tu Mensaje",
+      "send": "Enviar Mensaje"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 por Felipe Martinez | Todos los derechos reservados."
+  }
+}
