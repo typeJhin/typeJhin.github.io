@@ -10,12 +10,13 @@
     "greeting": "Hola, soy",
     "name": "Felipe Martinez",
     "descriptionTitle": "Y soy",
-    "description": "Soy Editor Multimedia con experiencia en edición de video, diseño gráfico y animación para artistas y proyectos personales. Actualmente me estoy formando como desarrollador con enfoque en backend, integrando lo visual con lo técnico para crear proyectos más completos y funcionales.",
+    "typedStrings": ["Desarrollador", "Editor Multimedia"],
+    "description": "Editor Multimedia con experiencia en edición de video, diseño gráfico y animación para artistas y proyectos personales. Actualmente me estoy formando como desarrollador con enfoque en backend, integrando lo visual con lo técnico para crear proyectos más completos y funcionales.",
     "downloadCV": "Descargar CV"
   },
   "about": {
     "subtitle": "Déjame presentarme",
-    "title": "Sobre mí",
+    "title": "Sobre <span>Mí</span>",
     "history": "Un poco de mi historia",
     "paragraph": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius officia soluta omnis, blanditiis vel voluptatum accusamus debitis. Harum ducimus vitae beatae! Ipsa aliquam aspernatur maxime minima et fuga nisi sed.",
     "readMore": "Leer más"

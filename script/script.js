@@ -1,11 +1,3 @@
-var typed = new Typed(".multiple-text", {
-    strings: ["Developer", "Multimedia Editor"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-
-})
 
 // circle skill ////////////////////////////////////////////////////////////////////////////////////////
 
@@ -65,21 +57,75 @@ window.onscroll = () => {
 
 
 
-const langButtons = document.querySelectorAll("[data-language]")
-const textsToChange = document.querySelectorAll("[data-section]")
+const langButtons = document.querySelectorAll("[data-language]");
+const textsToChange = document.querySelectorAll("[data-section]");
+let typedInstance = null;
 
-langButtons.forEach((button) =>{
-    button.addEventListener("click", () => {
-        fetch(`../languages/${button.dataset.language}.json`)
-            .then (res => res.json())
-            .then (data => {
-                textsToChange.forEach((el) =>{
-                    const section = el.dataset.section;
-                    const value = el.dataset.value;
+function loadLanguage(lang) {
+  fetch(`../languages/${lang}.json`)
+    .then(res => res.json())
+    .then(data => {
+      // Textos simples
+        textsToChange.forEach((el) => {
+        const section = el.dataset.section;
+        const value = el.dataset.value;
 
-                    el.innerHTML = data[section][value];
+        if (data[section] && typeof data[section][value] === 'string') {
+            // Detectar si es la línea del título con el span
+            if (section === "home" && value === "descriptionTitle") {
+            el.innerHTML = `${data[section][value]} <span class="multiple-text"></span>`;
+            } else {
+            el.innerHTML = data[section][value];
+            }
+        }
+        });
 
-                })
-            })
-    }) 
-})
+      // Renderizar sección Educación
+      if (data.education && Array.isArray(data.education.items)) {
+        const educationList = document.getElementById('education-list');
+        educationList.innerHTML = ''; // Limpiar antes
+
+        data.education.items.forEach(item => {
+          const itemHTML = `
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">${item.date}</div>
+              <div class="timeline-content">
+                <h3>${item.institution}</h3>
+                ${item.details ? `<h4>${item.details}</h4>` : ''}
+                <p>${item.career}</p>
+              </div>
+            </div>
+          `;
+          educationList.innerHTML += itemHTML;
+        });
+      }
+
+      // 🔄 Typed.js (sección dinámica)
+      if (data.home.typedStrings && Array.isArray(data.home.typedStrings)) {
+        if (typedInstance) {
+          typedInstance.destroy();
+        }
+        typedInstance = new Typed(".multiple-text", {
+          strings: data.home.typedStrings,
+          typeSpeed: 100,
+          backSpeed: 100,
+          backDelay: 1000,
+          loop: true
+        });
+      }
+    })
+    .catch(err => console.error("Error cargando el idioma:", err));
+}
+
+// Cambiar idioma al hacer clic
+langButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    loadLanguage(button.dataset.language);
+  });
+});
+
+// Cargar español por defecto
+document.addEventListener("DOMContentLoaded", () => {
+  loadLanguage("es");
+});

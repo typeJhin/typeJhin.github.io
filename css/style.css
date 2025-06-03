@@ -136,7 +136,7 @@ section{
 .home-content h1{
     font-size: 5.6rem;
     font-weight: 700;
-    line-height: 6rem;
+    line-height: 7rem;
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;

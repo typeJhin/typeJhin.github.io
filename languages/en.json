@@ -10,12 +10,13 @@
     "greeting": "Hello, It's Me",
     "name": "Felipe Martinez",
     "descriptionTitle": "And I'm a",
+    "typedStrings": ["Developer", "Multimedia Editor"],
     "description": "I'm a Multimedia Editor with experience in video editing, graphic design, and animation for artists and personal projects. I'm currently training as a backend-focused developer, integrating visuals with technical aspects to create more complete and functional projects.",
     "downloadCV": "Download CV"
   },
   "about": {
     "subtitle": "Let me introduce myself",
-    "title": "About Me",
+    "title": "About <span>Me</span>",
     "history": "A bit of my story",
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius officia soluta omnis, blanditiis vel voluptatum accusamus debitis. Harum ducimus vitae beatae! Ipsa aliquam aspernatur maxime minima et fuga nisi sed.",
     "readMore": "Read More"
