@@ -626,6 +626,8 @@ section{
 .portfolio-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
+    color: #1F242D;
+    font-weight: 600;
 }
 
 .portfolio-layer a {

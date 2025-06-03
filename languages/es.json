@@ -49,7 +49,7 @@
     }
   },
   "portfolio": {
-    "title": "Últimos Proyectos",
+    "title": "Últimos <span class='spn'>Proyectos</span>",
     "projects": [
       {
         "title": "VideoClip Musical",
@@ -60,17 +60,17 @@
         "description": "Video Clip hecho con Adobe After Effects y Adobe Premiere Pro para el artista Dripp Lyon en 2024"
       },
       {
-        "title": "VideoClip Musical",
+        "title": "Video Lyrics",
         "description": "Video Lyrics hecho con Adobe After Effects y Adobe Premiere Pro para los artistas Dripp Lyon & Keibis en 2024"
       },
       {
-        "title": "VideoClip Musical",
+        "title": "Video Lyrics",
         "description": "Video Clip hecho con Adobe After Effects y Adobe Premiere Pro para el artista Jhin Baby en 2024"
       }
     ]
   },
   "contact": {
-    "title": "Contactame",
+    "title": "Contacta<span class='spn'>Me</span>",
     "form": {
       "name": "Nombre Completo",
       "email": "Correo Electrónico",

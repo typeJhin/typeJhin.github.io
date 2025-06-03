@@ -49,7 +49,7 @@
     }
   },
   "portfolio": {
-    "title": "Latest Projects",
+    "title": "Latest <span class='spn'>Projects</span>",
     "projects": [
       {
         "title": "Music Video Clip",
@@ -70,7 +70,7 @@
     ]
   },
   "contact": {
-    "title": "Contact Me",
+    "title": "Contact <span class='spn'>Me</span>",
     "form": {
       "name": "Full Name",
       "email": "Email Address",
