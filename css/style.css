@@ -761,12 +761,17 @@ section{
 
   .header {
     padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
   }
 
   .home {
     flex-direction: column;
     padding-top: 20rem;
     text-align: center;
+    word-break: break-word;
   }
 
   .home-image img {
@@ -879,10 +884,8 @@ section{
         margin-right: 10%;
     }
     
-    .contact h2{
-        width: 70%;
-    }
 }
+
 
 @media (max-width: 1024px) and (min-width: 769px) {
 
@@ -920,6 +923,37 @@ section{
     }
     
 
+}
+
+@media (max-width: 480px){
+    .home{
+        margin-top: 20rem;
+    }
+    .about{
+        margin-top: 20rem;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contact h2{
+        font-size: 6rem;
+        align-items: center;
+
+    }
+    .portfolio h2{
+        font-size: 6rem;
+
+    }
+    .education h2{
+        font-size: 6rem;
+    }
+
+    .footer-iconTop{
+        margin-top: .8rem;
+        align-items: center;
+    }
 }
 
 
