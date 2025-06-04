@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>MI PORTFOLIO</title>
+</head>
+<body>
+    <header class="header">
+        
+        <a class="logo" href="index.html">Portfolio.</a>
+
+        <i class='bx  bx-menu' id="menu-icon"></i> 
+        <nav class="nav-bar">
+            <a href="#home"  style="--i:1" class="active" data-section="nav" data-value="home">Inicio</a>
+            <a href="#about" style="--i:2" data-section="nav" data-value="about">Acerca de</a>
+            <a href="#skills" style="--i:3"data-section="nav" data-value="skills">Skills</a>
+            <a href="#portfolio" style="--i:4" data-section="nav" data-value="portfolio">Portfolio</a>
+            <a href="#contact" style="--i:5"data-section="nav" data-value="contact">Contacto</a>
+        </nav>
+        
+        <div class="languages">
+            <button class="lang-button" data-language="es">🇦🇷</button>
+            <button class="lang-button" data-language="en">🇺🇸</button>
+        </div>
+
+    </header>
+    <main>
+        <section id="thanks" class="thanks">
+
+            <h1 data-section="thanks" data-value="title">¡Mensaje enviado con éxito!</h1>
+            
+            <div class="btn-box">
+
+                <a class="btn" href="index.html" data-section="thanks" data-value="button">Volver</a>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

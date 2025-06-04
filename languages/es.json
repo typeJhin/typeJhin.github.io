@@ -18,8 +18,10 @@
     "subtitle": "Déjame presentarme",
     "title": "Sobre <span>Mí</span>",
     "history": "Un poco de mi historia",
-    "paragraph": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius officia soluta omnis, blanditiis vel voluptatum accusamus debitis. Harum ducimus vitae beatae! Ipsa aliquam aspernatur maxime minima et fuga nisi sed.",
-    "readMore": "Leer más"
+    "paragraphShort": "La primera vez que vi una computadora fue a los 6 años en casa de mi primo y quede fascinado con todo lo que...",
+    "paragraphLong": "La primera vez que vi una computadora fue a los 6 años en casa de mi primo y quede fascinado con todo lo que se podia hacer. A los 7 años me compraron mi primera computadora y como a los 8 fue cuando llego internet a mi vida. Desde ese entonces entre en el mundo de youtube y nacio mi admiracion por los youtubers y los videos. Como queria ser como ellos empece a investigar como editar mis propios videos y ahi fue que encontre el primer software de edición: 'Camtasia Studio'. Luego me pase a 'Sony Vegas Pro' que en cierto punto era mas profesional. En 2021 comence a editar videos para una Agencia de Marketing y Programacion Web y entre en el mundo de la animacion con programas mas profesionales como Adobe After Effects y con eso empece a meterle mas dinamismo a mis producciones. En 2023 me meti a la carrera de Analista de Sistemas y aprendi lo basico para hacer una web que fue lo que mas me llamo la atencion de la carrera porque es una de las cosas mas artisticas que tiene ya que lleva un diseño y una pre-produccion que puede ser combinada con todo lo que yo venia haciendo. Tambien siento un gran fanatismo por arte futurista por eso el diseño de esta web es asi. Espero disfruten de mis trabajos y poder llegar a trabajar y aportar grandes ideas a sus proyectos. Disfruten de mi Web. ",
+    "readMore": "Leer más",
+    "readLess": "Leer menos"
   },
   "education": {
     "title": "Educación",
@@ -38,6 +40,7 @@
     ]
   },
   "skills": {
+    "upTitle": "TÉCNICAS Y PROFESIONALES",
     "title": "Mis Habilidades",
     "technical": "Habilidades Técnicas",
     "soft": "Habilidades Blandas",
@@ -79,6 +82,10 @@
       "message": "Tu Mensaje",
       "send": "Enviar Mensaje"
     }
+  },
+    "thanks":{
+    "title": "¡Mensaje enviado con éxito!",
+    "button": "Volver!"
   },
   "footer": {
     "copyright": "Copyright © 2025 por Felipe Martinez | Todos los derechos reservados."

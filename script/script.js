@@ -113,6 +113,89 @@ function loadLanguage(lang) {
           backDelay: 1000,
           loop: true
         });
+        const softSkillsMap = {
+          0: "teamwork",
+          1: "projectManagement",
+          2: "creativity",
+          3: "communication",
+        };
+
+        Object.keys(softSkillsMap).forEach((index) => {
+          const element = document.querySelectorAll(".skill-right .box .text small")[index];
+          const key = softSkillsMap[index];
+          if (element && data.skills.softSkills[key]) {
+            element.textContent = data.skills.softSkills[key];
+          }
+        });
+
+        // Portfolio
+        const portfolioBoxes = document.querySelectorAll(".portfolio-box");
+        if (data.portfolio.projects && data.portfolio.projects.length === portfolioBoxes.length) {
+          portfolioBoxes.forEach((box, i) => {
+            const title = box.querySelector("h4");
+            const desc = box.querySelector("p");
+            title.textContent = data.portfolio.projects[i].title;
+            desc.textContent = data.portfolio.projects[i].description;
+          });
+        }
+
+        // Título del portfolio (puede tener HTML como <span>)
+        const portfolioTitle = document.querySelector("#portfolio .heading");
+        if (portfolioTitle && data.portfolio.title) {
+          portfolioTitle.innerHTML = data.portfolio.title;
+        }
+
+        // Contacto - placeholders
+        const formInputs = document.querySelectorAll("form [data-section='form']");
+        formInputs.forEach((input) => {
+          const value = input.dataset.value;
+          const placeholderText = data.contact.form[value];
+          if (placeholderText) {
+            if (input.tagName.toLowerCase() === "input" || input.tagName.toLowerCase() === "textarea") {
+              input.placeholder = placeholderText;
+            } else {
+              input.textContent = placeholderText;
+            }
+          }
+        });
+        const aboutParagraph = document.getElementById("about-paragraph");
+        const readMoreBtn = document.getElementById("read-more-btn");
+
+        if (
+          aboutParagraph &&
+          readMoreBtn &&
+          data.about.paragraphShort &&
+          data.about.paragraphLong &&
+          data.about.readMore &&
+          data.about.readLess
+        ) {
+          // Inicializamos el párrafo y botón
+          aboutParagraph.innerText = data.about.paragraphShort;
+          readMoreBtn.textContent = data.about.readMore;
+
+          // Guardamos los textos en el botón como atributos
+          readMoreBtn.dataset.short = data.about.paragraphShort;
+          readMoreBtn.dataset.long = data.about.paragraphLong;
+          readMoreBtn.dataset.more = data.about.readMore;
+          readMoreBtn.dataset.less = data.about.readLess;
+          readMoreBtn.dataset.expanded = "false"; // Estado inicial
+
+          readMoreBtn.onclick = () => {
+            const isExpanded = readMoreBtn.dataset.expanded === "true";
+
+            if (isExpanded) {
+              aboutParagraph.innerText = readMoreBtn.dataset.short;
+              readMoreBtn.textContent = readMoreBtn.dataset.more;
+              readMoreBtn.dataset.expanded = "false";
+              aboutParagraph.classList.remove("expanded");
+            } else {
+              aboutParagraph.innerText = readMoreBtn.dataset.long;
+              readMoreBtn.textContent = readMoreBtn.dataset.less;
+              readMoreBtn.dataset.expanded = "true";
+              aboutParagraph.classList.add("expanded");
+            }
+          };
+        }
       }
     })
     .catch(err => console.error("Error cargando el idioma:", err));

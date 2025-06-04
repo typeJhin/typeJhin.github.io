@@ -266,10 +266,22 @@ section{
     color: #fff;
     font-weight: 300;
     margin: 2rem 0 3rem;
+    line-height: 1.5;
 }
 
 .about-content{
     margin-left: 30px;
+}
+
+#about-paragraph {
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  max-height: 150px; 
+}
+
+
+#about-paragraph.expanded {
+  max-height: 1000px; /* Suficiente para mostrar el texto largo */
 }
 
 
@@ -726,6 +738,19 @@ section{
     font-size: 2.4rem;
     color: #1F242D;
 }
+/* --------------------------------------  THANKS SECTION MESAGGE -------------------------------------------- */
+
+.thanks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.thanks h1{
+    font-size: 3rem;
+}
+
 /* --------------------------------------  MEDIA QUERYS  -------------------------------------------- */
 
 @media (max-width: 768px) {
@@ -736,31 +761,6 @@ section{
 
   .header {
     padding: 2rem 5%;
-  }
-
-  #menu-icon {
-    display: block;
-  }
-
-  .nav-bar {
-    position: absolute;
-    top: 100%;
-    left: -100%;
-    width: 100%;
-    background: #1F242D;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: left 0.3s ease;
-  }
-
-  .nav-bar a {
-    margin: 2rem 0;
-    font-size: 2rem;
-  }
-
-  .nav-bar.active {
-    left: 0;
   }
 
   .home {
@@ -780,16 +780,23 @@ section{
     text-align: center;
   }
 
-  .img-about img {
-    width: 70vw;
-  }
+ .img-about {
+     display: flex;
+     justify-content: center;
+    }
+
+ .img-about img {
+     width: 100%;
+     height: auto;
+     max-width: 70vw;
+    }
 
   .about-content {
     margin-left: 0;
   }
 
   .education {
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
   }
 
   .timeline-items::before {
@@ -800,6 +807,9 @@ section{
   .timeline-item:nth-child(even) {
     padding: 0 2rem;
     text-align: left;
+  }
+  .timeline-date{
+    margin-left: 1.5rem;
   }
 
   .timeline-dot {
@@ -817,6 +827,17 @@ section{
   .portfolio .porfolio-container {
     grid-template-columns: 1fr;
   }
+
+    .about-content h2,
+    .about-content h3,
+    .about-content .text-up,
+    .about-content p {
+        text-align: center;
+    }
+
+    .about-content h2 span {
+        display: inline-block;
+    }
 }
 
 @media (max-width: 768px){
@@ -845,6 +866,22 @@ section{
         font-size: 2rem;
         margin: 3rem 0 ;
     }
+
+    #about-paragraph {
+     max-height: 200px; /* Un poco más para pantallas chicas si querés mostrar más texto */
+    }
+
+    #about-paragraph.expanded {
+        max-height: 1500px; /* Suficiente para móviles */
+    }
+
+    .languages{
+        margin-right: 10%;
+    }
+    
+    .contact h2{
+        width: 70%;
+    }
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
@@ -854,7 +891,7 @@ section{
   }
 
   .header {
-    padding: 2rem 7%;
+    padding: 3rem 7%;
   }
 
   .home {
@@ -875,7 +912,14 @@ section{
 
   .portfolio .porfolio-container {
     grid-template-columns: repeat(2, 1fr);
+    
   }
+    .languages{
+        display: inline-flex;
+        margin-left: 5px;
+    }
+    
+
 }
 
 

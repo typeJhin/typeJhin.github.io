@@ -17,9 +17,13 @@
   "about": {
     "subtitle": "Let me introduce myself",
     "title": "About <span>Me</span>",
-    "history": "A bit of my story",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius officia soluta omnis, blanditiis vel voluptatum accusamus debitis. Harum ducimus vitae beatae! Ipsa aliquam aspernatur maxime minima et fuga nisi sed.",
-    "readMore": "Read More"
+
+    "paragraphShort": "The first time I saw a computer was when I was 6 years old at my cousin’s house, and I was fascinated by everything...",
+
+    "paragraphLong": "The first time I saw a computer was when I was 6 years old at my cousin’s house, and I was fascinated by everything you could do with it. When I was 7, I got my first computer, and around age 8, the internet entered my life. From that moment on, I discovered YouTube and developed an admiration for YouTubers and videos. Wanting to be like them, I started researching how to edit my own videos, and that’s when I found my first editing software: 'Camtasia Studio'. Later, I switched to 'Sony Vegas Pro', which was more professional in some aspects. In 2021, I started editing videos for a Marketing and Web Programming Agency, and I entered the world of animation using more professional tools like Adobe After Effects, which allowed me to bring more dynamism to my productions. In 2023, I started studying to become a Systems Analyst, and I learned the basics of web development, which was what caught my attention the most in the program because it's one of the most artistic aspects — it involves design and pre-production, which could be combined with everything I was already doing. I'm also a big fan of futuristic art, which is why this website’s design looks the way it does. I hope you enjoy my work, and I look forward to contributing great ideas to your projects. Enjoy my website.",
+
+    "readMore": "Read more",
+    "readLess": "Read less"
   },
   "education": {
     "title": "Education",
@@ -38,6 +42,7 @@
     ]
   },
   "skills": {
+    "upTitle": "TECHNICAL AND PROFESSIONAL",   
     "title": "My Skills",
     "technical": "Technical Skills",
     "soft": "Soft Skills",
@@ -79,6 +84,10 @@
       "message": "Your Message",
       "send": "Send Message"
     }
+  },
+  "thanks":{
+    "title": "Message sent successfully!",
+    "button": "Go back!"
   },
   "footer": {
     "copyright": "Copyright © 2025 by Felipe Martinez | All Rights Reserved."

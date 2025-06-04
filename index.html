@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>MI PORTFOLIO</title>
+    <title>Felipe Martinez Portfolio | Developer & Multimedia Editor</title>
 </head>
 <body>
     <header class="header">
@@ -54,22 +54,23 @@
         </section>
 
         <section id="about" class="about">
-            <div class="img-about">
-                <img src="img/EQ.png" alt="#">
+        <div class="img-about">
+            <img src="img/EQ.png" alt="#">
+        </div>
 
+        <div class="about-content">
+            <span class="text-up" data-section="about" data-value="subtitle">Déjame Presentarme</span>
+            <h2 data-section="about" data-value="title">Sobre</h2>
+            <h3 data-section="about" data-value="history">Un poco de mi historia</h3>
+
+            <p id="about-paragraph">
+            <!-- Este párrafo se rellena desde JavaScript -->
+            </p>
+
+            <div class="btn-box">
+            <a class="btn" id="read-more-btn">Leer más</a>
             </div>
-
-            <div class="about-content">
-
-                <span class="text-up" data-section="about" data-value="subtitle">Dejame Presentarme</span>
-                <h2 data-section="about" data-value="title">Sobre</h2>
-                <h3 data-section="about" data-value="history">Un poco de mi historia</h3>
-                <p data-section="about" data-value="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius officia soluta omnis, blanditiis vel voluptatum accusamus debitis. Harum ducimus vitae beatae! Ipsa aliquam aspernatur maxime minima et fuga nisi sed.</p>
-
-                <div class="btn-box">
-                    <a href="#" class="btn" data-section="about" data-value="readMore">Leer mas!</a>
-                </div>
-            </div>
+        </div>
         </section>
         
         <section class="education" id="education">
@@ -86,7 +87,7 @@
 
         <section id="skills" class="skills">
             <div class="main-text">
-                <span class="text-up">Técnicas y Profesionales</span>
+                <span data-section="skills" data-value="upTitle" class="text-up">Técnicas y Profesionales</span>
                 <h2 data-section="skills" data-value="title">Mis Habilidades</h2>
             </div>
 
@@ -276,17 +277,20 @@
         <section class="contact" id="contact">
             <h2 class="heading" data-section="contact" data-value="title">Contacta</h2>
             
-            <form action="#">
+            <form action="https://formsubmit.co/contacto.felipemartinez03@gmail.com" method="POST">
                 <div class="input-box">
-                    <input type="text" placeholder="Nombre Completo" data-section="form" data-value="name">
-                    <input type="email" placeholder="Correo Electronico" data-section="form" data-value="email">
+                    <input type="text" placeholder="Nombre Completo" data-section="form" data-value="name" required>
+                    <input type="email" placeholder="Correo Electronico" data-section="form" data-value="email" required>
                 </div>
                     <div class="input-box">
-                    <input type="number" placeholder="Numero de Teléfono" data-section="form" data-value="phone">
+                    <input type="number" placeholder="Numero de Teléfono" data-section="form" data-value="phone" required>
                     <input type="text" placeholder="Asunto" data-section="form" data-value="subject">
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje" data-section="form" data-value="message"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje" data-section="form" data-value="message" required></textarea>
                 <input type="submit" value="Enviar Mensaje" class="btn" data-section="form" data-value="send">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portfolio">
+                <input type="hidden" name="_next" value="gracias.html">
             </form>
         </section>
 
