@@ -279,14 +279,14 @@
             
             <form action="https://formsubmit.co/contacto.felipemartinez03@gmail.com" method="POST">
                 <div class="input-box">
-                    <input type="text" placeholder="Nombre Completo" data-section="form" data-value="name" required>
-                    <input type="email" placeholder="Correo Electronico" data-section="form" data-value="email" required>
+                    <input type="text" name="name" placeholder="Nombre Completo" data-section="form" data-value="name" required>
+                    <input type="email" name="email" placeholder="Correo Electronico" data-section="form" data-value="email" required>
                 </div>
                     <div class="input-box">
-                    <input type="number" placeholder="Numero de Teléfono" data-section="form" data-value="phone" required>
-                    <input type="text" placeholder="Asunto" data-section="form" data-value="subject">
+                    <input type="number" name="phon" placeholder="Numero de Teléfono" data-section="form" data-value="phone" required>
+                    <input type="text" name="subject" placeholder="Asunto" data-section="form" data-value="subject" required>
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje" data-section="form" data-value="message" required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Tu Mensaje" data-section="form" data-value="message" required></textarea>
                 <input type="submit" value="Enviar Mensaje" class="btn" data-section="form" data-value="send">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portfolio">
